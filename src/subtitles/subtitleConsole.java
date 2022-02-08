@@ -2,18 +2,13 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package console;
+package subtitles;
 
 import java.io.File;
-import java.io.FilenameFilter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JOptionPane;
-import subtitles.Subtitle;
-import subtitles.SubtitleSet;
+import subtitles.*;
 /**
  *
  * @author fjvigil
@@ -51,17 +46,11 @@ public class subtitleConsole {
         try {            
             if (!path.equals("")) 
             {            
-                File f = new File(path.toString());
-
-                String so = System.getProperty("os.name");
-                String separador = System.getProperty("file.separator");
-                
-                //File[] files = f.listFiles();
-                //Arrays.sort(files);
+                File f = new File(path);                
                 ArrayList<File> subtitleFiles= new ArrayList<File>(Arrays.asList(f));
 
                 if (subtitleFiles.size() == 0) {
-                    return "No hay archivos en la ruta de entrada seleccionada.";
+                    return "No hay archivos en la ruta de entrada seleccionada. ";
                 }
 
                 for (int i=0; i<subtitleFiles.size(); i++)
