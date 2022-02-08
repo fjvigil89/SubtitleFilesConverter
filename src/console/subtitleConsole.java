@@ -27,9 +27,12 @@ public class subtitleConsole {
         // TODO code application logic here
         Scanner in = new Scanner(System.in);
         //String path="AT-20181010.srt";
-        String path="D:\\AT-20181010.srt";
-        String format=".stl";
-        
+        //String path="D:\\AT-20.stl";
+        //String format=".srt";
+        System.out.println("Primer parámetro es la dirección del fichero \n");
+        System.out.println("Segundo parámetro es la extensión a convertir (.stl || .srt ) \n");
+        String path=args[0];
+        String format=args[1];        
         /*
         System.out.println("Entre el Path del fichero");
         path = in.nextLine();
@@ -37,7 +40,6 @@ public class subtitleConsole {
         System.out.println("Entre el formato de salida");
         format += in.nextLine();
         */
-        
         
         System.out.println(convert(path, format));
         
