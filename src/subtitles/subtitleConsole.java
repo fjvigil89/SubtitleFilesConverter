@@ -28,6 +28,7 @@ public class subtitleConsole {
         System.out.println("Segundo parámetro es la extensión a convertir (.stl || .srt ) \n");
         String path=args[0];
         String format=args[1];        
+        
         /*
         System.out.println("Entre el Path del fichero");
         path = in.nextLine();
