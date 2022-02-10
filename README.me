@@ -8,4 +8,4 @@ cd src/subtitles/
 java subtitleConsole.java <path_fichero> <formato--(.srt || .stl)>
 
 #Ejemplo 
- /usr/bin/env /usr/lib/jvm/java-17-oracle/bin/java -cp /home/frank/.config/Code/User/workspaceStorage/dee6033298633a9cd8a390cd01fa0138/redhat.java/jdt_ws/SubtitleFilesConverter_abdea22/bin subtitles.subtitleConsole  ./AT-20181010.srt .stl
+java --enable-preview -XX:+ShowCodeDetailsInExceptionMessages -cp src/ subtitles.subtitleConsole  ./AT-20181010.srt .stl
